@@ -1,0 +1,134 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	font-size: 1.6rem;
+	font-family: Arial, sans-serif;
+	line-height: 1.5;
+	color: #231815;
+	font-weight: 400;
+	background: #f0f8ff;
+}
+
+@media screen and (max-width: 767px) {
+	body {
+		font-size: 1.4rem;
+	}
+}
+
+.c-heading-01 {
+	font-size: 3.2rem;
+	text-align: center;
+}
+
+.c-heading-02 {
+	font-size: 2.4rem;
+}
+
+.p-weather-app {
+	padding: 0 16px;
+}
+
+@media screen and (max-width: 767px) {
+	.p-weather-app {
+		width: 100%;
+	}
+}
+
+.p-weather-app__item {
+	margin-top: 24px;
+	padding: 20px;
+	text-align: center;
+	background: #ffffff;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.p-weather-app__item-inner {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+	.p-weather-app__item-inner {
+		flex-direction: column;
+	}
+}
+
+.p-weather-app__input {
+	width: 400px;
+	padding: 10px;
+}
+
+@media screen and (max-width: 767px) {
+	.p-weather-app__input {
+		width: 100%;
+	}
+}
+
+.p-weather-app__btn-wrap {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin: 0 0 0 16px;
+}
+
+@media screen and (max-width: 767px) {
+	.p-weather-app__btn-wrap {
+    margin: 16px auto 0;
+		flex-direction: row;
+	}
+}
+
+.p-weather-app__btn {
+	width: 80px;
+	padding: 5px;
+	color: #FFF;
+	background: #0056B3;
+	border: none;
+	border-radius: 4px;
+}
+
+.p-weather-app__btn:hover {
+	cursor: pointer;
+}
+
+.p-weather-app__btn:not(:first-of-type) {
+	margin-top: 8px;
+}
+
+@media screen and (max-width: 767px) {
+	.p-weather-app__btn:not(:first-of-type) {
+		margin: 0 0 0 8px;
+	}
+}
+
+.p-weather-app__btn--clear {
+	background: #ccc;
+}
+
+.p-weather-app__result {
+	display: none;
+}
+
+.p-weather-app__result.is-show {
+	display: block;
+	margin-top: 24px;
+}
+
+.p-weather-app__result-item {
+	margin-top: 8px;
+}

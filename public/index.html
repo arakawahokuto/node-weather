@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>お天気アプリ</title>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<section class="p-weather-app">
+		<h1 class="c-heading-01">お天気アプリ</h1>
+		<div class="p-weather-app__item">
+			<div class="p-weather-app__item-inner">
+				<input type="text" id="js-city-input" class="p-weather-app__input" placeholder="都市名をアルファベットで入力してください (例：Tokyo)">
+				<div class="p-weather-app__btn-wrap">
+					<button id="js-search-btn" class="p-weather-app__btn">検索</button>
+					<button id="js-clear-btn" class="p-weather-app__btn p-weather-app__btn--clear">クリア</button>
+				</div>
+			</div>
+			<div id="js-weather-result" class="p-weather-app__result"></div>
+		</div>
+	</section>
+	<script src="app.js"></script>
+</body>
+</html>
